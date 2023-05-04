@@ -1,6 +1,6 @@
-name: Laravel Deployment Action
-description: A currently opinionated github action for deploying laravel apps
-author: 'Séan Poynter-Smith'
+name: Mikield Laravel Deployment Action
+description: A currently opinionated github action for deploying laravel apps without caching
+author: 'Séan Poynter-Smith & Vladyslav G.'
 branding:
   icon: 'send'
   color: 'green'
