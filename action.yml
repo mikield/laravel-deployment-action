@@ -130,7 +130,7 @@ runs:
       run: |
         echo "${{inputs.DEPLOY_KEY}}" > deploy_key
         chmod 600 ./deploy_key
-        rsync -vzr --stats --checksum \
+        rsync -vzra --stats --checksum \
           -e 'ssh -i ./deploy_key -o StrictHostKeyChecking=no -p ${{inputs.SERVER_PORT || 22}}' \
           --exclude /deploy_key \
           --exclude /.git/ \
